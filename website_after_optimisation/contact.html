@@ -22,15 +22,47 @@
     
 
     
-<!-- Analytics -->
- 
-<!-- Analytics END -->
+<!-- Rich Result : Adress -->
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "La Chouette Agence",
+	  "image": "https://sodanlabs.github.io/projets_openclassrooms/projet_4/website_after_optimisation/img/logo.png",
+	  "email" : "contact@lachouetteagence.com",
+	  "url": "https://sodanlabs.github.io/projets_openclassrooms/projet_4/website_after_optimisation/",
+	  "telephone": "0405000001",
+	  "priceRange": "Available on demande",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "2 Place Sathonay",
+		"addressLocality": "Lyon",
+		"postalCode": "69001",
+		"addressCountry": "FR"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 45.7695241,
+		"longitude": 4.830167299999999
+	  },
+	  "openingHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+		  "Monday",
+		  "Tuesday",
+		  "Wednesday",
+		  "Thursday",
+		  "Friday"
+		],
+		"opens": "09:00",
+		"closes": "18:00"
+	  } 
+	}
+	</script>
+<!--  Rich Result : Adress  END -->
     
 </head>
 <body>
-<!-- Principal conteneur -->
-<div class="page-container">
-    
 <!-- bloc-0 -->
 <div class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
@@ -110,7 +142,16 @@
 			</div>
 			<div class="col-sm-6">
 				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					<span itemprop="email">contact@lachouetteagence.com</span><br/>
+					<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">2 place Sathonay</span> 
+					<span itemprop="postalCode">69001</span> 
+					<span itemprop="addressLocality">Lyon</span></span><br/>Ouvert de 
+					<span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+					<span itemprop="opens" content="09:00">9h</span> à 
+					<span itemprop="closes" content="18:00">18h</span>, du 
+					<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+					<span itemprop="name">lundi au vendredi</span></span></span><br/>
 				</p>
 			</div>
 		</div>
