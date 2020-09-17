@@ -18,6 +18,10 @@ a:hover {
     cursor: pointer;
 }
 
+.margintop {
+    margin-top: 40px;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
