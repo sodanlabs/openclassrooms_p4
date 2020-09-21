@@ -12,6 +12,11 @@ button {
   transition: all 0.3s ease-in-out;
   outline: none !important;
 }
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid black !important;
+}
 
 a:hover {
   text-decoration: none;
@@ -842,13 +847,13 @@ h3 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
