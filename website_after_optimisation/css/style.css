@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -12,10 +13,12 @@ button {
   transition: all 0.3s ease-in-out;
   outline: none !important;
 }
+
 a:focus,
 button:focus,
 input:focus {
-  outline: 2px solid black !important;
+  outline: 3px solid black !important;
+  font-weight: bold ;
 }
 
 a:hover {
@@ -871,10 +874,7 @@ h3 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-  }
+
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -882,9 +882,7 @@ h3 {
   }
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
-    padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    padding: 0 20px; 
   }
 }
 
