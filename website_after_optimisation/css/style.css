@@ -887,6 +887,10 @@ h3 {
 }
 
 @media (max-width: 767px) {
+  .autosize {
+    width: 100vw;
+  }
+
   .page-container {
     overflow-x: hidden;
     position: relative;
