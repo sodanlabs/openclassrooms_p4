@@ -891,6 +891,10 @@ h3 {
     width: 100%;
   }
 
+  .row {
+    margin-right: 0;
+  }
+
   .page-container {
     overflow-x: hidden;
     position: relative;
